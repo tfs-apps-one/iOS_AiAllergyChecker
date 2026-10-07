@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct AiAllergyCheckerApp: App {
+    @State private var model = AppModel()
+
+    init() {
+        // 広告 SDK の初期化（起動・カメラを遅らせないよう非同期）
+        AdConfig.start()
+    }
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(model)
+                .preferredColorScheme(.dark)
         }
     }
 }
