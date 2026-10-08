@@ -69,17 +69,18 @@ struct DashboardView: View {
                     .fixedSize()
             }
 
-            Button {
-                model.showSettings = true
-            } label: {
-                Image(systemName: "gearshape.fill")
-                    .font(.system(size: 18))
-                    .foregroundStyle(Theme.textMuted)
-                    .frame(width: 34, height: 34)
-                    .contentShape(Rectangle())
-            }
-            .padding(.leading, 4)
-            .accessibilityLabel("設定")
+            // 【初回リリースでは非表示】設定画面（表示モード切替・拡張モード）は追加アップデートで解放予定
+            // Button {
+            //     model.showSettings = true
+            // } label: {
+            //     Image(systemName: "gearshape.fill")
+            //         .font(.system(size: 18))
+            //         .foregroundStyle(Theme.textMuted)
+            //         .frame(width: 34, height: 34)
+            //         .contentShape(Rectangle())
+            // }
+            // .padding(.leading, 4)
+            // .accessibilityLabel("設定")
         }
     }
 

@@ -13,7 +13,8 @@ struct AiAllergyCheckerApp: App {
 
     init() {
         // 広告 SDK の初期化（起動・カメラを遅らせないよう非同期）
-        AdConfig.start()
+        // 【初回リリースでは広告無効】ダウンロード数が増えてから有効化する
+        // AdConfig.start()
     }
 
     var body: some Scene {

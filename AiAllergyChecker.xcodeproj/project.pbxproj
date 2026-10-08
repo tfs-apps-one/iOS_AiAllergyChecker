@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1C0DE0130A0000100000001 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = A1C0DE0130A0000100000002 /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1C0DE0130A0000100000001 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +115,6 @@
 			);
 			name = AiAllergyChecker;
 			packageProductDependencies = (
-				A1C0DE0130A0000100000002 /* GoogleMobileAds */,
 			);
 			productName = AiAllergyChecker;
 			productReference = FAFD4F12307452180075C93C /* AiAllergyChecker.app */;
@@ -201,9 +198,6 @@
 			);
 			mainGroup = FAFD4F09307452180075C93C;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				A1C0DE0130A0000100000003 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
-			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FAFD4F13307452180075C93C /* Products */;
 			projectDirPath = "";
@@ -637,24 +631,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		A1C0DE0130A0000100000003 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 12.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A1C0DE0130A0000100000002 /* GoogleMobileAds */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A1C0DE0130A0000100000003 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
-			productName = GoogleMobileAds;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAFD4F0A307452180075C93C /* Project object */;
 }

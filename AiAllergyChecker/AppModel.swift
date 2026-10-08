@@ -303,16 +303,18 @@ final class AppModel {
 
     func settingsOpened() {
         tick()
-        if !isExpandUnlocked { rewarded.load() }   // 先読み
+        // 【初回リリースでは広告無効】
+        // if !isExpandUnlocked { rewarded.load() }   // 先読み
     }
 
     func watchRewardedAd() {
-        if rewarded.isReady {
-            rewarded.present()
-        } else {
-            showRewardLoading = true
-            rewarded.load()
-        }
+        // 【初回リリースでは広告無効】
+        // if rewarded.isReady {
+        //     rewarded.present()
+        // } else {
+        //     showRewardLoading = true
+        //     rewarded.load()
+        // }
     }
 
     func cancelRewardLoading() {

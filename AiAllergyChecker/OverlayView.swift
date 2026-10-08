@@ -115,6 +115,11 @@ struct OverlayView: View {
             y -= shift
             h -= (overflow - shift)
         }
+
+        // 位置の微調整：枠（と凡例）全体を下に 3pt ずらす。
+        // 凡例の確保高さ 44pt は実寸（約 41pt）より余裕を持たせてあるので、凡例は画面内に収まる。
+        let downShift: CGFloat = 3
+        y += downShift
         return CGRect(x: x, y: y, width: zoneW, height: max(0, h))
     }
 

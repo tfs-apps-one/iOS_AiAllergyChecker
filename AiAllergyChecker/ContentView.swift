@@ -35,10 +35,11 @@ struct ContentView: View {
                     .animation(.easeInOut(duration: 0.25), value: cameraWeight)
                 }
 
-                if model.termsAgreed {
-                    BannerAdView(width: outer.size.width)
-                        .background(Color.black)
-                }
+                // 【初回リリースでは広告無効】ダウンロード数が増えてから有効化する
+                // if model.termsAgreed {
+                //     BannerAdView(width: outer.size.width)
+                //         .background(Color.black)
+                // }
             }
         }
         .background(Color.black)
